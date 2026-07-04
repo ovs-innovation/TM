@@ -174,7 +174,7 @@ export default function PrintingTechnologyCards() {
     <section className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-5">
 
-        <div className="text-center mb-6">
+        <div className="text-center mb-14">
           <h2 className="text-4xl font-bold text-slate-900">
             Printing Technologies
           </h2>
@@ -185,7 +185,7 @@ export default function PrintingTechnologyCards() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
 
           {technologies.map((tech) => {
             const Icon = tech.icon;
@@ -195,15 +195,15 @@ export default function PrintingTechnologyCards() {
                 key={tech.id}
                 className="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition duration-300"
               >
-                <div className="bg-white rounded-3xl border border-slate-200 p-6 hover:shadow-xl transition-all duration-300">
+                <div className="p-8">
 
                   <div
-                    className={`w-16 h-16 rounded-2xl flex items-center justify-center ${tech.accent}`}
+                    className={`w-13 h-13 rounded-2xl flex items-center justify-center ${tech.accent}`}
                   >
-                    <Icon className="h-8 w-8" />
+                    <Icon className="h-6 w-6" />
                   </div>
 
-                  <h3 className="mt-6 text-2xl font-bold text-slate-900">
+                  <h3 className="mt-5 text-2xl font-bold text-slate-900">
                     {tech.name}
                   </h3>
 
@@ -215,14 +215,14 @@ export default function PrintingTechnologyCards() {
                     {tech.description}
                   </p>
 
-                  <div className="mt-4">
+                  <div className="mt-5">
 
-                    <h4 className="flex items-center gap-2 text-emerald-600 font-semibold mb-2">
+                    <h4 className="flex items-center gap-2 text-emerald-600 font-semibold mb-3">
                       <CheckCircle size={18} />
                       Advantages
                     </h4>
 
-                    <ul className="space-y-1">
+                    <ul className="space-y-2">
                       {tech.pro.map((item) => (
                         <li
                           key={item}
@@ -234,14 +234,14 @@ export default function PrintingTechnologyCards() {
                     </ul>
                   </div>
 
-                  <div className="mt-4">
+                  <div className="mt-5">
 
                     <h4 className="flex items-center gap-2 text-red-500 font-semibold mb-3">
                       <XCircle size={18} />
                       Limitations
                     </h4>
 
-                    <ul className="space-y-1">
+                    <ul className="space-y-2">
                       {tech.con.map((item) => (
                         <li
                           key={item}
@@ -252,8 +252,6 @@ export default function PrintingTechnologyCards() {
                       ))}
                     </ul>
                   </div>
-
-
                 </div>
               </div>
             );

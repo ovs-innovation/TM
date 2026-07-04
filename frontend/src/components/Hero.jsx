@@ -48,18 +48,24 @@ export default function Hero() {
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
 
               <Link
-                to="/products"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-pink-600 px-8 py-4 font-semibold text-white shadow-lg shadow-pink-500/30 hover:scale-105 hover:bg-pink-700 transition"
-              >
-                Explore Products
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-
-              <Link
                 to="/contact"
-                className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-8 py-4 font-semibold text-slate-800 hover:border-pink-500 hover:text-pink-600 transition"
+                className=" group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-pink-500 via-rose-500 to-pink-600 px-8 py-4 font-semibold text-white shadow-lg shadow-pink-500/30 transition-all duration-500 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/40 active:scale-95"
               >
-                Request Quote
+                {/* Animated Glow */}
+                <span
+                  className=" absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full"
+                />
+
+                {/* Text */}
+                <span className="relative z-10">
+                  Request Quote
+                </span>
+
+                {/* Animated Arrow */}
+                <ArrowRight
+                  size={20}
+                  className=" relative z-10 ml-2 transition-all duration-300 group-hover:translate-x-2"
+                />
               </Link>
 
             </div>
@@ -91,21 +97,35 @@ export default function Hero() {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="relative hidden lg:flex justify-center items-center">
+          <div className="relative hidden lg:flex items-center justify-center">
 
-            {/* Background Glow */}
-            <div className="absolute h-[450px] w-[450px] rounded-full bg-gradient-to-r from-pink-300/30 via-fuchsia-300/20 to-cyan-300/20 blur-3xl"></div>
+            {/* Animated Glow */}
+
+            <div className="absolute h-[520px] w-[520px] rounded-full bg-gradient-to-r from-pink-400/20 via-fuchsia-400/20 to-cyan-300/20 blur-3xl animate-glow"></div>
+
+            {/* Rotating Ring */}
+
+            <div className="absolute h-[430px] w-[430px] rounded-full border border-pink-200/40 border-dashed animate-rotate-slow"></div>
 
             {/* Glass Circle */}
-            <div className="absolute h-72 w-72 rounded-full border border-white/40 backdrop-blur-2xl"></div>
+
+            <div className="absolute h-80 w-80 rounded-full border border-white/30 bg-white/10 backdrop-blur-xl shadow-2xl"></div>
+
+            {/* Floating Dots */}
+
+            <div className="absolute top-10 left-16 h-4 w-4 rounded-full bg-pink-400 animate-bounce"></div>
+
+            <div className="absolute top-32 right-10 h-5 w-5 rounded-full bg-cyan-400 animate-pulse"></div>
+
+            {/* Image */}
 
             <img
               src={mug}
               alt="Custom Mug"
-              className="relative w-full max-w-md drop-shadow-[0_40px_80px_rgba(0,0,0,0.18)] hover:scale-105 transition duration-700"
+              className=" relative z-20 w-full max-w-md animate-float drop-shadow-[0_50px_90px_rgba(0,0,0,0.25)] transition-all duration-700 hover:scale-110 hover:rotate-2 cursor-pointer"
             />
-          </div>
 
+          </div>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-white rounded-3xl shadow-lg p-8 border border-slate-100">

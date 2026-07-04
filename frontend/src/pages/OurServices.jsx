@@ -1,5 +1,6 @@
 import { Sparkles, Palette, Briefcase, Gift, Shirt, Coffee, Package, ArrowRight, CheckCircle } from "lucide-react";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 export default function OurServices() {
     const services = [
@@ -46,8 +47,6 @@ export default function OurServices() {
 
             <div className="relative max-w-7xl mx-auto px-6 py-24">
 
-                {/* Hero */}
-
                 <div className="text-center max-w-3xl mx-auto">
 
                     <div className="inline-flex items-center gap-2 bg-pink-100 text-pink-600 px-5 py-2 rounded-full font-medium mb-6">
@@ -78,19 +77,19 @@ export default function OurServices() {
                             key={index}
                             className="bg-white border border-pink-100 rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
                         >
+                            <Link to="/contact">
+                                <div className="w-16 h-16 rounded-2xl bg-pink-100 flex items-center justify-center text-pink-600 mb-6">
+                                    {service.icon}
+                                </div>
 
-                            <div className="w-16 h-16 rounded-2xl bg-pink-100 flex items-center justify-center text-pink-600 mb-6">
-                                {service.icon}
-                            </div>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                                    {service.title}
+                                </h3>
 
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                                {service.title}
-                            </h3>
-
-                            <p className="text-gray-600 leading-7">
-                                {service.desc}
-                            </p>
-
+                                <p className="text-gray-600 leading-7">
+                                    {service.desc}
+                                </p>
+                            </Link>
                         </div>
                     ))}
                 </div>
@@ -110,7 +109,7 @@ export default function OurServices() {
 
                             <div key={i} className="text-center">
 
-                                <div className="w-20 h-20 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-white text-2xl font-bold flex items-center justify-center mx-auto mb-6 shadow-lg">
+                                <div className="w-15 h-15 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-white text-2xl font-bold flex items-center justify-center mx-auto mb-6 shadow-lg">
                                     {i + 1}
                                 </div>
 
@@ -160,47 +159,53 @@ export default function OurServices() {
 
                 {/* Why Choose */}
 
-                <div className="mt-16 sm:mt-20 lg:mt-28 rounded-[24px] sm:rounded-[32px] lg:rounded-[40px] bg-gradient-to-r from-pink-500 to-rose-500 p-6 sm:p-10 lg:p-14 text-white">
+                <div className="mt-14 sm:mt-20 lg:mt-28 rounded-3xl bg-gradient-to-r from-pink-500 to-rose-500 px-5 py-8 sm:px-8 sm:py-10 lg:px-14 lg:py-14 text-white shadow-xl">
 
-                    <h2 className="mb-8 sm:mb-10 text-center text-3xl sm:text-4xl lg:text-5xl font-bold">
+                    <h2 className="mb-8 text-center text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight">
                         Why Choose TM?
                     </h2>
 
-                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8">
 
-                        <div className="text-center lg:text-left">
-                            <h3 className="mb-3 text-xl sm:text-2xl font-semibold">
+                        <div className="rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-4 text-center transition duration-300 hover:bg-white/15 hover:-translate-y-1">
+
+                            <h3 className="mb-1 text-lg sm:text-xl lg:text-2xl font-semibold">
                                 Premium Quality
                             </h3>
-                            <p className="text-sm sm:text-base leading-7 text-pink-100">
+
+                            <p className="text-sm sm:text-base leading-6 text-pink-100">
                                 HD printing with durable materials and vibrant colors that make every custom product stand out.
                             </p>
+
                         </div>
 
-                        <div className="text-center lg:text-left">
-                            <h3 className="mb-3 text-xl sm:text-2xl font-semibold">
+                        <div className="rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-5 text-center transition duration-300 hover:bg-white/15 hover:-translate-y-1">
+
+                            <h3 className="mb-2 text-lg sm:text-xl lg:text-2xl font-semibold">
                                 Fast Delivery
                             </h3>
 
-                            <p className="text-sm sm:text-base leading-7 text-pink-100">
+                            <p className="text-sm sm:text-base leading-6 text-pink-100">
                                 Nationwide shipping with secure packaging and quick turnaround for every order.
                             </p>
+
                         </div>
 
-                        <div className="text-center lg:text-left sm:col-span-2 lg:col-span-1">
-                            <h3 className="mb-3 text-xl sm:text-2xl font-semibold">
+                        <div className="rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-5 text-center transition duration-300 hover:bg-white/15 hover:-translate-y-1 sm:col-span-2 lg:col-span-1">
+
+                            <h3 className="mb-2 text-lg sm:text-xl lg:text-2xl font-semibold">
                                 Affordable Pricing
                             </h3>
 
-                            <p className="text-sm sm:text-base leading-7 text-pink-100">
-                                Competitive pricing for single purchases, personalized gifts, and bulk corporate orders.
+                            <p className="text-sm sm:text-base leading-6 text-pink-100">
+                                Competitive pricing for personalized gifts, single purchases, and bulk corporate orders.
                             </p>
+
                         </div>
+
                     </div>
 
                 </div>
-
-                {/* CTA */}
 
                 <div className="mt-24 text-center">
 
@@ -212,13 +217,10 @@ export default function OurServices() {
                         Start designing your personalized products today and let us bring
                         your creativity to life with premium printing.
                     </p>
-
                 </div>
-
             </div>
 
             <Footer />
-
         </section>
     );
 }

@@ -4,8 +4,8 @@ import Home from "./pages/Home";
 import About from "./pages/AboutUs";
 import OurServices from "./pages/OurServices";
 import Contact from "./pages/Contact";
-import Products from "./pages/Products";
- 
+import WhatsAppButton from "./components/Whatsapp";
+
 function App() {
   return (
     <BrowserRouter>
@@ -16,8 +16,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<OurServices />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/products" element={<Products />} />
+
       </Routes>
+      <WhatsAppButton />
     </BrowserRouter>
   );
 }

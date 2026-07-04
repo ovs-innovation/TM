@@ -22,7 +22,6 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Products", path: "/products" },
     { name: "Services", path: "/services" },
     { name: "Contact", path: "/contact" },
   ];
@@ -91,7 +90,7 @@ export default function Navbar() {
               key={link.name}
               to={link.path}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block px-3 py-3 rounded-lg text-base font-medium text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+              className="block px-3 py-3 rounded-lg hover:underline text-base font-medium text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
             >
               {link.name}
             </Link>

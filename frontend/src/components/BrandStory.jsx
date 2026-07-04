@@ -83,17 +83,17 @@ export default function BrandStory() {
 
               {/* Stats Block */}
               <div className="grid grid-cols-3 gap-4 text-center">
-                <div className="p-3 bg-white rounded-xl border border-slate-300">
-                  <span className="block font-serif text-2xl font-bold text-pink-600">100%</span>
-                  <span className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Satisfaction</span>
+                <div className="p-1 bg-white rounded-xl border-2 border-red-300">
+                  <span className="block font-serif text-xl font-bold text-pink-600">100%</span>
+                  <span className="text-[10px] text-slate-600 uppercase tracking-wider font-semibold">Satisfaction</span>
                 </div>
-                <div className="p-3 bg-white rounded-xl border border-slate-300">
-                  <span className="block font-serif text-2xl font-bold text-pink-600">48hr</span>
-                  <span className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Turnaround</span>
+                <div className="p-1 bg-white rounded-xl border border-red-300">
+                  <span className="block font-serif text-xl font-bold text-pink-600">48hr</span>
+                  <span className="text-[10px] text-slate-600 uppercase tracking-wider font-semibold">Turnaround</span>
                 </div>
-                <div className="p-3 bg-white rounded-xl border border-slate-300">
-                  <span className="block font-serif text-2xl font-bold text-pink-600">10k+</span>
-                  <span className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Happy Clients</span>
+                <div className="p-1 bg-white rounded-xl border border-red-300">
+                  <span className="block font-serif text-xl font-bold text-pink-600">10k+</span>
+                  <span className="text-[10px] text-slate-600 uppercase tracking-wider font-semibold">Clients</span>
                 </div>
               </div>
             </div>
