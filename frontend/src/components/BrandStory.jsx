@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, Zap, Heart, ShieldCheck } from 'lucide-react';
+import tsimg from "../assets/tsimg.png";
 
 export default function BrandStory() {
   return (
@@ -74,7 +75,7 @@ export default function BrandStory() {
 
               <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950 mb-6">
                 <img
-                  src="https://scontent.fdel1-5.fna.fbcdn.net/v/t39.30808-6/534413413_122095378580988419_771764437091334626_n.jpg?stp=dst-jpg_tt6&cstp=mx1125x425&ctp=s1125x425&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Lr0p0q4JqGAQ7kNvwHsWNd6&_nc_oc=AdqEd98Fq31kR-WP1XVTXHVE8xFJhC_gXZKHmsaj2pN-Qc6dwVc-1qrI7VW0g2uB72F-In6mVAjGsoZuUzQnZ2Vx&_nc_zt=23&_nc_ht=scontent.fdel1-5.fna&_nc_gid=xAgm4zo5hXWjD77duhiNJw&_nc_ss=7b289&oh=00_AQA2prE8H8jHPAieNlhgQ0hit0dN62mb5icp0WZ2siu-GQ&oe=6A4D1EBA"
+                  src={tsimg}
                   alt="img"
                   className="w-full h-full object-cover object-center opacity-85 hover:scale-102 transition-transform duration-300"
                   loading="lazy"
