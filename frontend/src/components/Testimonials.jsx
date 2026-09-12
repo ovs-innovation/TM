@@ -26,7 +26,7 @@ const testimonials = [
 
 export default function Testimonials() {
     return (
-        <section className="relative overflow-hidden bg-white py-24">
+        <section className="relative overflow-hidden bg-white py-12 sm:py-20 lg:py-24">
             {/* Background Grid */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#fce7f3_1px,transparent_1px),linear-gradient(to_bottom,#fce7f3_1px,transparent_1px)] bg-[size:45px_45px] opacity-60"></div>
 
@@ -34,66 +34,66 @@ export default function Testimonials() {
             <div className="absolute top-0 left-0 h-80 w-80 rounded-full bg-pink-200/40 blur-3xl"></div>
             <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-rose-200/40 blur-3xl"></div>
 
-            <div className="relative mx-auto max-w-7xl px-6">
+            <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
                 {/* Heading */}
-                <div className="mx-auto mb-16 max-w-3xl text-center">
-                    <span className="inline-flex items-center rounded-full bg-pink-100 px-5 py-2 text-sm font-semibold text-pink-600">
+                <div className="mx-auto mb-8 sm:mb-16 max-w-3xl text-center">
+                    <span className="inline-flex items-center rounded-full bg-pink-100 px-4 py-1.5 sm:px-5 sm:py-2 text-xs sm:text-sm font-semibold text-pink-600">
                         ❤️ Testimonials
                     </span>
 
-                    <h2 className="mt-6 text-5xl font-black text-gray-900">
-                        Loved by
-                        <span className="block bg-gradient-to-r from-pink-500 via-rose-500 to-purple-600 bg-clip-text text-transparent">
+                    <h2 className="mt-4 sm:mt-6 text-2xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight leading-tight">
+                        Loved by{" "}
+                        <span className="bg-gradient-to-r from-pink-500 via-rose-500 to-purple-600 bg-clip-text text-transparent">
                             Thousands of Customers
                         </span>
                     </h2>
 
-                    <p className="mt-6 text-lg text-gray-600">
+                    <p className="mt-3 sm:mt-5 text-xs sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
                         From personalized gifts to bulk corporate orders, our customers
                         trust TM for premium customization and exceptional service.
                     </p>
                 </div>
 
-                {/* Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+                {/* Cards - Flex Layout */}
+                <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-8 items-stretch">
                     {testimonials.map((item, index) => (
                         <div
                             key={index}
-                            className="group relative overflow-hidden rounded-3xl border border-pink-100 bg-white p-6 sm:p-7 lg:p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+                            className="flex-1 group relative overflow-hidden rounded-2xl sm:rounded-3xl border border-pink-100 bg-white p-5 sm:p-7 lg:p-8 shadow-xs sm:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between"
                         >
                             {/* Quote Icon */}
                             <Quote
-                                size={70}
-                                className="absolute -right-4 -top-4 text-pink-100 transition group-hover:text-pink-200 sm:size-[80px]"
+                                size={55}
+                                className="absolute -right-2 -top-2 text-pink-100/80 transition group-hover:text-pink-200 sm:size-[70px] pointer-events-none"
                             />
 
                             <div className="relative">
                                 {/* User */}
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-3">
                                     <div>
-                                        <h3 className="text-base sm:text-lg font-bold text-gray-900">
+                                        <h3 className="text-sm sm:text-base lg:text-lg font-bold text-gray-900">
                                             {item.name}
                                         </h3>
 
-                                        <p className="text-xs sm:text-sm text-pink-600">
+                                        <p className="text-[11px] sm:text-xs text-pink-600 font-semibold mt-0.5">
                                             {item.role}
                                         </p>
                                     </div>
                                 </div>
 
                                 {/* Rating */}
-                                <div className="mt-5 flex gap-1">
+                                <div className="mt-3 sm:mt-4 flex gap-1">
                                     {[...Array(item.rating)].map((_, i) => (
                                         <Star
                                             key={i}
-                                            size={16}
-                                            className="fill-pink-400 text-pink-600 sm:h-[18px] sm:w-[18px]"
+                                            size={15}
+                                            className="fill-pink-400 text-pink-500 sm:size-[17px]"
                                         />
                                     ))}
                                 </div>
 
                                 {/* Review */}
-                                <p className="mt-5 text-sm sm:text-base leading-7 text-gray-600">
+                                <p className="mt-3 sm:mt-4 text-xs sm:text-sm lg:text-base leading-relaxed text-gray-600">
                                     "{item.review}"
                                 </p>
                             </div>
@@ -101,26 +101,26 @@ export default function Testimonials() {
                     ))}
                 </div>
 
-                {/* Bottom Stats */}
-                <div className="mt-20 grid grid-cols-2 gap-8 rounded-[35px] bg-gradient-to-r from-pink-500 via-rose-500 to-purple-600 p-10 text-center text-white md:grid-cols-4">
-                    <div>
-                        <h3 className="text-4xl font-black">10K+</h3>
-                        <p className="mt-2 text-pink-100">Happy Customers</p>
+                {/* Bottom Stats - Flex Layout */}
+                <div className="mt-10 sm:mt-16 flex flex-wrap sm:flex-nowrap items-center justify-around gap-4 sm:gap-6 rounded-2xl sm:rounded-[35px] bg-gradient-to-r from-pink-500 via-rose-500 to-purple-600 p-5 sm:p-8 lg:p-10 text-center text-white shadow-md">
+                    <div className="flex-1 min-w-[120px] sm:min-w-0 p-1">
+                        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black">10K+</h3>
+                        <p className="mt-1 text-[11px] sm:text-sm text-pink-100 font-medium">Happy Customers</p>
                     </div>
 
-                    <div>
-                        <h3 className="text-4xl font-black">50K+</h3>
-                        <p className="mt-2 text-pink-100">Products Delivered</p>
+                    <div className="flex-1 min-w-[120px] sm:min-w-0 p-1">
+                        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black">50K+</h3>
+                        <p className="mt-1 text-[11px] sm:text-sm text-pink-100 font-medium">Products Delivered</p>
                     </div>
 
-                    <div>
-                        <h3 className="text-4xl font-black">4.9★</h3>
-                        <p className="mt-2 text-pink-100">Average Rating</p>
+                    <div className="flex-1 min-w-[120px] sm:min-w-0 p-1">
+                        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black">4.9★</h3>
+                        <p className="mt-1 text-[11px] sm:text-sm text-pink-100 font-medium">Average Rating</p>
                     </div>
 
-                    <div>
-                        <h3 className="text-4xl font-black">98%</h3>
-                        <p className="mt-2 text-pink-100">Repeat Customers</p>
+                    <div className="flex-1 min-w-[120px] sm:min-w-0 p-1">
+                        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black">98%</h3>
+                        <p className="mt-1 text-[11px] sm:text-sm text-pink-100 font-medium">Repeat Customers</p>
                     </div>
                 </div>
             </div>

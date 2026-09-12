@@ -58,15 +58,15 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-slate-600 font-light">
               <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 text-pink-700 shrink-0" />
-                <span>support@tossmart.com</span>
+                <a href="mailto:support@tossmart.com" className="hover:text-pink-800 transition-colors">support@tossmart.com</a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 text-pink-700 shrink-0" />
-                <span>+91 9999119402</span>
+                <a href="tel:9999119402" className="hover:text-pink-800 transition-colors">+91 9999119402</a>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="h-4 w-4 text-pink-700 shrink-0 mt-0.5" />
-                <span>C 61 Sector 10 Noida  201301 Uttar Pradesh</span>
+                <span>C 61, Sector 10 Noida</span>
               </li>
             </ul>
           </div>

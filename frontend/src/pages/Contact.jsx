@@ -133,9 +133,9 @@ export default function Contact() {
 
                                     <div>
                                         <h3 className="font-bold text-lg">Phone</h3>
-                                        <p className="text-gray-600">
-                                            +91 98765 43210
-                                        </p>
+                                        <a href="tel:9999119402" className="text-gray-600 hover:text-pink-600 transition">
+                                            +91 9999119402
+                                        </a>
                                     </div>
 
                                 </div>
@@ -148,9 +148,9 @@ export default function Contact() {
 
                                     <div>
                                         <h3 className="font-bold text-lg">Email</h3>
-                                        <p className="text-gray-600">
-                                            hello@chromacraft.com
-                                        </p>
+                                        <a href="mailto:support@tossmart.com" className="text-gray-600 hover:text-pink-600 transition">
+                                            support@tossmart.com
+                                        </a>
                                     </div>
 
                                 </div>
@@ -164,7 +164,7 @@ export default function Contact() {
                                     <div>
                                         <h3 className="font-bold text-lg">Address</h3>
                                         <p className="text-gray-600">
-                                            New Delhi, India
+                                            C 61, Sector 10 Noida
                                         </p>
                                     </div>
 
