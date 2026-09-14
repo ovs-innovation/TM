@@ -39,8 +39,8 @@ export default function Footer() {
               {[
                 { name: "Home", path: "/" },
                 { name: "About", path: "/about" },
-                { name: "Products", path: "/products" },
                 { name: "Services", path: "/services" },
+                { name: "Retail Branding", path: "/retail-branding" },
                 { name: "Contact", path: "/contact" },
               ].map(({ name, path }) => (
                 <li key={path}>
@@ -89,7 +89,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-slate-200 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-800 font-light">
-          <p>© {currentYear} ChromaCraft Studio. All rights reserved.</p>
+          <p>© {currentYear} Tossmart. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-slate-600 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-slate-600 transition-colors">Terms of Service</a>

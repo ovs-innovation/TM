@@ -60,98 +60,118 @@ export default function About() {
                     <h1 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
                         We create
                         <span className="mt-2 block bg-gradient-to-r from-pink-500 to-fuchsia-600 bg-clip-text text-transparent">
-                            Memorable, Personalized 
+                            Memorable, Personalized
                         </span>
                         products
                     </h1>
-                    <p className="mx-auto mt-6 text-lg leading-8 text-slate-600 sm:text-xl">
+                    <p className="mx-auto mt-6 text-md leading-8 text-slate-600 sm:text-md">
                         Explore our wide range of promotional products designed to enhance your brand presence. From personalized pens and mugs to custom apparel and corporate gifts, our items are perfect for events, marketing campaigns, and employee appreciation. Boost engagement and leave a lasting impression with premium quality customization.
                     </p>
                 </div>
 
-                {/* Our Vision & Our Mission - Flex Layout */}
-                <div className="mt-16 flex flex-col md:flex-row gap-8 items-stretch">
+                {/* Our Vision & Our Mission - Compact & Modern */}
+                <div className="mt-10 sm:mt-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 items-stretch">
                     {/* Our Vision */}
-                    <div className="flex-1 rounded-[2rem] bg-gradient-to-br from-[#0A467B] via-[#0e5c9f] to-[#1277c6] p-8 text-white shadow-[0_20px_60px_-20px_rgba(10,70,123,0.5)] md:p-10 flex flex-col justify-between relative overflow-hidden group hover:scale-[1.01] transition-transform duration-300">
-                        <div className="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-white/10 blur-2xl pointer-events-none" />
+                    <div className="relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white/95 p-5 sm:p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 flex flex-col justify-between group">
+                        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0A467B] to-sky-400" />
+                        <div className="absolute top-0 right-0 w-36 h-36 bg-sky-100/30 rounded-full blur-2xl pointer-events-none" />
+
                         <div>
-                            <div className="inline-flex rounded-2xl bg-white/15 p-3.5 backdrop-blur shadow-inner">
-                                <Eye size={28} className="text-sky-200" />
+                            <div className="flex items-center justify-between mb-3.5">
+                                <div className="inline-flex rounded-xl bg-sky-50 border border-sky-100 p-2 text-[#0A467B] shadow-xs">
+                                    <Eye size={18} />
+                                </div>
+                                <span className="text-[11px] font-bold uppercase tracking-wider text-[#0A467B] bg-sky-50/90 border border-sky-200/60 px-2.5 py-0.5 rounded-full">
+                                    Future Direction
+                                </span>
                             </div>
-                            <h2 className="mt-6 text-3xl font-bold tracking-tight text-white flex items-center gap-3">
+
+                            <h3 className="text-base sm:text-lg font-black tracking-wide text-slate-900 mb-2">
                                 OUR VISION
-                            </h2>
-                            <p className="mt-4 text-base sm:text-lg leading-relaxed text-blue-50 font-normal">
+                            </h3>
+
+                            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 “We aim to achieve rapid rise in seamless integration into consumers’ lives, offering seamless connectivity of related services with a breadth of related events, such as content or promotion, customized as per the user’s preferences.”
                             </p>
                         </div>
-                        <div className="mt-8 flex items-center gap-2 text-sm font-medium text-sky-200 pt-4 border-t border-white/15">
-                            Seamless Integration & Personalized Experience
-                            <ArrowRight size={16} />
+
+                        <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-[#0A467B] group-hover:text-sky-600 transition-colors">
+                            <span>Seamless Integration & Experience</span>
+                            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                         </div>
                     </div>
 
                     {/* Our Mission */}
-                    <div className="flex-1 rounded-[2rem] bg-gradient-to-br from-[#0A467B] via-[#105691] to-[#0A467B] p-8 text-white shadow-[0_20px_60px_-20px_rgba(10,70,123,0.5)] md:p-10 flex flex-col justify-between relative overflow-hidden group hover:scale-[1.01] transition-transform duration-300">
-                        <div className="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-pink-500/20 blur-2xl pointer-events-none" />
+                    <div className="relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white/95 p-5 sm:p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 flex flex-col justify-between group">
+                        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#FA0091] to-rose-400" />
+                        <div className="absolute top-0 right-0 w-36 h-36 bg-pink-100/30 rounded-full blur-2xl pointer-events-none" />
+
                         <div>
-                            <div className="inline-flex rounded-2xl bg-white/15 p-3.5 backdrop-blur shadow-inner">
-                                <Target size={28} className="text-pink-300" />
+                            <div className="flex items-center justify-between mb-3.5">
+                                <div className="inline-flex rounded-xl bg-pink-50 border border-pink-100 p-2 text-[#FA0091] shadow-xs">
+                                    <Target size={18} />
+                                </div>
+                                <span className="text-[11px] font-bold uppercase tracking-wider text-[#FA0091] bg-pink-50/90 border border-pink-200/60 px-2.5 py-0.5 rounded-full">
+                                    Core Purpose
+                                </span>
                             </div>
-                            <h2 className="mt-6 text-3xl font-bold tracking-tight text-white flex items-center gap-3">
+
+                            <h3 className="text-base sm:text-lg font-black tracking-wide text-slate-900 mb-2">
                                 OUR MISSION
-                            </h2>
-                            <p className="mt-4 text-base sm:text-lg leading-relaxed text-blue-50 font-normal">
+                            </h3>
+
+                            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 “We always strive and excel in the delivery of our services to our clients by being unique, diverse in sectors of business, innovation and in the art of our solutions, and client satisfaction shall remain our goal.”
                             </p>
                         </div>
-                        <div className="mt-8 flex items-center gap-2 text-sm font-medium text-pink-200 pt-4 border-t border-white/15">
-                            Client Satisfaction & Solution Innovation
-                            <ArrowRight size={16} />
+
+                        <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-[#FA0091] group-hover:text-pink-600 transition-colors">
+                            <span>Client Satisfaction & Innovation</span>
+                            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                         </div>
                     </div>
                 </div>
 
-                {/* Founder's Message Section - Flex Layout */}
-                <div className="mt-24">
-                    <div className="text-center max-w-3xl mx-auto mb-14">
-                        <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/90 px-4 py-1.5 text-xs sm:text-sm font-semibold text-[#0A467B] shadow-sm backdrop-blur">
-                            <Quote size={15} className="text-[#FA0091]" />
+                {/* Founder's Message Section - Compact & Modern */}
+                <div className="mt-14 sm:mt-16">
+                    <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+                        <span className="mb-3 inline-flex items-center gap-1.5 rounded-full border border-blue-200 bg-white/90 px-3.5 py-1 text-xs font-semibold text-[#0A467B] shadow-xs backdrop-blur">
+                            <Quote size={13} className="text-[#FA0091]" />
                             Leadership & Vision
                         </span>
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
                             FOUNDER'S <span className="bg-gradient-to-r from-[#0A467B] via-blue-600 to-[#FA0091] bg-clip-text text-transparent">MESSAGE</span>
                         </h2>
-                        <p className="mt-3 text-sm sm:text-base text-slate-600 font-medium">
+                        <p className="mt-1.5 text-xs sm:text-sm text-slate-600 font-medium">
                             The Vision Behind Tossmart Private Limited
                         </p>
                     </div>
 
-                    <div className="flex flex-col lg:flex-row gap-8 items-stretch">
+                    <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6 items-stretch">
                         {/* Founder Card 1: Rajan Kumar Awasthi */}
-                        <div className="flex-1 rounded-[2.5rem] border border-slate-200/80 bg-white/95 p-6 sm:p-8 md:p-10 shadow-[0_20px_50px_-20px_rgba(10,70,123,0.18)] backdrop-blur transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 flex flex-col justify-between relative overflow-hidden">
-                            {/* Decorative background curve */}
-                            <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-sky-100/60 to-transparent rounded-bl-full pointer-events-none" />
+                        <div className="relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white/95 p-5 sm:p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 flex flex-col justify-between">
+                            <div className="absolute top-0 right-0 w-36 h-36 bg-gradient-to-bl from-sky-100/50 to-transparent rounded-bl-full pointer-events-none" />
 
                             <div>
-                                <div className="flex items-start justify-between gap-4 mb-6">
-                                    <div>
-                                        <h3 className="text-xl sm:text-2xl font-black text-[#0A467B] uppercase tracking-wide">
+                                <div className="flex items-center justify-between gap-3 mb-4">
+                                    <div className="min-w-0">
+                                        <div className="flex items-center gap-1.5 mb-1">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-[#0A467B]"></span>
+                                            <span className="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
+                                            <span className="w-1.5 h-1.5 rounded-full bg-[#FA0091]"></span>
+                                            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 ml-1">Leadership</span>
+                                        </div>
+                                        <h3 className="text-sm sm:text-base font-black text-[#0A467B] uppercase tracking-wide">
                                             FOUNDER'S MESSAGE
                                         </h3>
-                                        <p className="text-xs sm:text-sm text-slate-500 font-medium mt-1">
-                                            The Vision Behind Tossmart Private Limited
+                                        <p className="text-xs text-slate-500 font-medium truncate">
+                                            Operations & Execution
                                         </p>
-                                        <div className="flex items-center gap-1.5 mt-2">
-                                            <span className="w-2.5 h-2.5 rounded-full bg-[#0A467B]"></span>
-                                            <span className="w-2.5 h-2.5 rounded-full bg-sky-400"></span>
-                                            <span className="w-2.5 h-2.5 rounded-full bg-[#FA0091]"></span>
-                                        </div>
                                     </div>
 
                                     {/* Circular Photo */}
                                     <div className="relative shrink-0">
-                                        <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-gradient-to-tr from-[#0A467B] via-sky-400 to-[#FA0091] shadow-lg">
+                                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full p-0.5 bg-gradient-to-tr from-[#0A467B] via-sky-400 to-[#FA0091] shadow-md">
                                             <img
                                                 src={rajanImg}
                                                 alt="Rajan Kumar Awasthi"
@@ -161,53 +181,53 @@ export default function About() {
                                     </div>
                                 </div>
 
-                                <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
+                                <div className="space-y-2.5 text-slate-600 text-xs sm:text-sm leading-relaxed">
                                     <p>
-                                        <strong className="text-slate-900">At Tossmart Private Limited,</strong> we believe creativity is more than design it is experience. Every project we handle is crafted with the intention of making your brand stand out with clarity, color, and purpose.
+                                        <strong className="text-slate-900 font-semibold">At Tossmart Private Limited,</strong> we believe creativity is more than design it is experience. Every project we handle is crafted with the intention of making your brand stand out with clarity, color, and purpose.
                                     </p>
-                                    <p className="text-slate-600 font-light">
-                                        Strong operations are the backbone of every successful company. At Tossmart, we ensure seamless execution from production to delivery with a focus on quality, precision, and time commitment. Whether it's printing, branding, gifting, or fixtures, our team works tirelessly to provide reliable service and a smooth experience for every client. Your trust motivates us to raise our standards every single day.
+                                    <p>
+                                        Strong operations are the backbone of every successful company. At Tossmart, we ensure seamless execution from production to delivery with a focus on quality, precision, and time commitment. Whether it's printing, branding, gifting, or fixtures, our team works tirelessly to provide reliable service and a smooth experience for every client.
                                     </p>
                                 </div>
                             </div>
 
-                            <div className="mt-8 pt-5 border-t border-slate-100 flex items-center justify-between">
+                            <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between">
                                 <div>
-                                    <h4 className="text-base sm:text-lg font-bold text-[#0A467B]">
+                                    <h4 className="text-sm sm:text-base font-bold text-[#0A467B]">
                                         Rajan Kumar Awasthi
                                     </h4>
-                                    <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                                    <p className="text-[11px] sm:text-xs text-slate-500 font-medium">
                                         Co-Founder & Operation Head
                                     </p>
                                 </div>
-                                <Quote className="text-[#0A467B]/20 w-8 h-8" />
+                                <Quote className="text-[#0A467B]/25 w-5 h-5" />
                             </div>
                         </div>
 
                         {/* Founder Card 2: Shivesh Dixit */}
-                        <div className="flex-1 rounded-[2.5rem] border border-slate-200/80 bg-white/95 p-6 sm:p-8 md:p-10 shadow-[0_20px_50px_-20px_rgba(250,0,145,0.18)] backdrop-blur transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 flex flex-col justify-between relative overflow-hidden">
-                            {/* Decorative background curve */}
-                            <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-pink-100/60 to-transparent rounded-bl-full pointer-events-none" />
+                        <div className="relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white/95 p-5 sm:p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 flex flex-col justify-between">
+                            <div className="absolute top-0 right-0 w-36 h-36 bg-gradient-to-bl from-pink-100/50 to-transparent rounded-bl-full pointer-events-none" />
 
                             <div>
-                                <div className="flex items-start justify-between gap-4 mb-6">
-                                    <div>
-                                        <h3 className="text-xl sm:text-2xl font-black text-[#0A467B] uppercase tracking-wide">
+                                <div className="flex items-center justify-between gap-3 mb-4">
+                                    <div className="min-w-0">
+                                        <div className="flex items-center gap-1.5 mb-1">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-[#0A467B]"></span>
+                                            <span className="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
+                                            <span className="w-1.5 h-1.5 rounded-full bg-[#FA0091]"></span>
+                                            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 ml-1">Leadership</span>
+                                        </div>
+                                        <h3 className="text-sm sm:text-base font-black text-[#0A467B] uppercase tracking-wide">
                                             FOUNDER'S MESSAGE
                                         </h3>
-                                        <p className="text-xs sm:text-sm text-slate-500 font-medium mt-1">
-                                            The Vision Behind Tossmart Private Limited
+                                        <p className="text-xs text-slate-500 font-medium truncate">
+                                            Sales, Growth & Strategy
                                         </p>
-                                        <div className="flex items-center gap-1.5 mt-2">
-                                            <span className="w-2.5 h-2.5 rounded-full bg-[#0A467B]"></span>
-                                            <span className="w-2.5 h-2.5 rounded-full bg-sky-400"></span>
-                                            <span className="w-2.5 h-2.5 rounded-full bg-[#FA0091]"></span>
-                                        </div>
                                     </div>
 
                                     {/* Circular Photo */}
                                     <div className="relative shrink-0">
-                                        <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-gradient-to-tr from-[#0A467B] via-pink-400 to-[#FA0091] shadow-lg">
+                                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full p-0.5 bg-gradient-to-tr from-[#0A467B] via-pink-400 to-[#FA0091] shadow-lg">
                                             <img
                                                 src={shiveshImg}
                                                 alt="Shivesh Dixit"
@@ -217,26 +237,26 @@ export default function About() {
                                     </div>
                                 </div>
 
-                                <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
+                                <div className="space-y-2.5 text-slate-600 text-xs sm:text-sm leading-relaxed">
                                     <p>
-                                        <strong className="text-slate-900">At Tossmart Private Limited,</strong> our mission is simple to help brands communicate better. In today's competitive world, printing, branding, and gifting are not just services...they are powerful tools that connect businesses with their customers.
+                                        <strong className="text-slate-900 font-semibold">At Tossmart Private Limited,</strong> our mission is simple to help brands communicate better. In today's competitive world, printing, branding, and gifting are not just services...they are powerful tools that connect businesses with their customers.
                                     </p>
-                                    <p className="text-slate-600 font-light">
+                                    <p>
                                         My role in Sales & Marketing is to understand our clients' vision and translate it into solutions that deliver real results. Whether it's store branding, corporate gifts, UV printing, or event materials, we focus on creating value, building relationships, and ensuring long-term satisfaction.
                                     </p>
                                 </div>
                             </div>
 
-                            <div className="mt-8 pt-5 border-t border-slate-100 flex items-center justify-between">
+                            <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between">
                                 <div>
-                                    <h4 className="text-base sm:text-lg font-bold text-[#0A467B]">
+                                    <h4 className="text-sm sm:text-base font-bold text-[#0A467B]">
                                         Shivesh Dixit
                                     </h4>
-                                    <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                                    <p className="text-[11px] sm:text-xs text-slate-500 font-medium">
                                         Co-Founder & Head of Sales & Marketing
                                     </p>
                                 </div>
-                                <Quote className="text-[#FA0091]/20 w-8 h-8" />
+                                <Quote className="text-[#FA0091]/25 w-5 h-5" />
                             </div>
                         </div>
                     </div>
